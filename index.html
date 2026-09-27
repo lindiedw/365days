@@ -1,169 +1,183 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>365 Days Perfume</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>365 Days | Fragrance for Every Day</title>
 
-  <style>
-    body {
-      margin: 0;
-      font-family: Georgia, serif;
-      background: #fff8f5;
-      color: #3d2925;
-    }
+<style>
+* {
+  box-sizing: border-box;
+}
 
-    header {
-      background: #3d2925;
-      color: white;
-      text-align: center;
-      padding: 40px 20px;
-    }
+body {
+  margin: 0;
+  min-height: 100vh;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #fff9f6;
+  color: #3d2925;
+}
 
-    header h1 {
-      font-size: 42px;
-      margin: 0;
-    }
-
-    header p {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-
-    .hero {
+header {
   text-align: center;
-  padding: 100px 25px;
+  padding: 55px 20px 35px;
+  background: #3d2925;
+  color: #fffaf7;
+}
+
+.brand {
+  font-size: 52px;
+  letter-spacing: 6px;
+  margin: 0;
+  font-weight: normal;
+}
+
+.subtitle {
+  margin-top: 12px;
+  font-size: 17px;
+  letter-spacing: 2px;
+}
+
+.hero {
+  min-height: 65vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 80px 25px;
+}
+
+.hero-content {
   max-width: 750px;
-  margin: 0 auto;
+}
+
+.flower {
+  font-size: 45px;
+  margin-bottom: 25px;
 }
 
 .hero h2 {
   font-size: 48px;
-  margin-bottom: 20px;
-  letter-spacing: 1px;
+  font-weight: normal;
+  margin: 0 0 25px;
+  letter-spacing: 2px;
 }
 
 .hero p {
-  font-size: 20px;
+  font-size: 19px;
   line-height: 1.8;
   margin: 15px auto;
 }
 
-.hero .tagline {
-  font-size: 24px;
+.tagline {
   font-style: italic;
-  margin-bottom: 30px;
+  font-size: 23px !important;
+  margin-bottom: 30px !important;
 }
 
-.launch {
-  margin-top: 40px;
-  padding: 20px;
-  font-size: 20px;
+.coming {
+  display: inline-block;
+  margin-top: 35px;
+  padding: 18px 30px;
+  border-top: 1px solid #cdbbb4;
+  border-bottom: 1px solid #cdbbb4;
+  font-size: 18px;
   letter-spacing: 1px;
 }
 
-.launch span {
-  margin: 0 12px;
+.coming span {
+  margin: 0 10px;
 }
 
-    .hero h2 {
-      font-size: 38px;
-      margin-bottom: 15px;
-    }
+footer {
+  text-align: center;
+  padding: 35px 20px;
+  background: #3d2925;
+  color: #fffaf7;
+  font-size: 14px;
+  line-height: 1.8;
+}
 
-    .hero p {
-      font-size: 20px;
-      max-width: 600px;
-      margin: auto;
-      line-height: 1.6;
-    }
+@media (max-width: 600px) {
+  .brand {
+    font-size: 38px;
+    letter-spacing: 4px;
+  }
 
-    .products {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: center;
-      gap: 25px;
-      padding: 30px 20px 70px;
-    }
+  .subtitle {
+    font-size: 14px;
+  }
 
-    .product {
-      background: white;
-      width: 280px;
-      padding: 25px;
-      text-align: center;
-      border-radius: 15px;
-      box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-    }
+  .hero {
+    min-height: 65vh;
+    padding: 60px 22px;
+  }
 
-    .product .bottle {
-      font-size: 80px;
-      margin-bottom: 15px;
-    }
+  .hero h2 {
+    font-size: 36px;
+  }
 
-    .product h3 {
-      font-size: 25px;
-    }
+  .hero p {
+    font-size: 17px;
+  }
 
-    .price {
-      font-size: 22px;
-      font-weight: bold;
-      margin: 15px;
-    }
+  .tagline {
+    font-size: 21px !important;
+  }
 
-    button {
-      background: #3d2925;
-      color: white;
-      border: none;
-      padding: 12px 25px;
-      border-radius: 25px;
-      font-size: 16px;
-      cursor: pointer;
-    }
-
-    button:hover {
-      opacity: 0.8;
-    }
-
-    footer {
-      background: #3d2925;
-      color: white;
-      text-align: center;
-      padding: 30px 20px;
-    }
-  </style>
+  .coming {
+    font-size: 16px;
+    padding: 15px 18px;
+  }
+}
+</style>
 </head>
 
 <body>
 
-  <header>
-    <h1>365 Days</h1>
-    <p>Fragrance for every day of the year.</p>
-  </header>
-
-  <section class="hero">
-  <h2>Launching Soon ✨</h2>
-
-  
-
-  <p>
-    Something beautiful is being created behind the scenes.
-    365 Days is crafting fragrances designed to make every day
-    smell a little more fabulous.
-  </p>
-
-  
-
-  <div class="launch">
-    <span>🌸</span>
-    <strong>Our collection is coming soon</strong>
-    <span>✨</span>
+<header>
+  <h1 class="brand">365 DAYS</h1>
+  <div class="subtitle">
+    Fragrance for every day of the year.
   </div>
+</header>
+
+<main>
+
+<section class="hero">
+
+  <div class="hero-content">
+
+    <div class="flower">🌸</div>
+
+    <h2>Launching Soon ✨</h2>
+
+    <p class="tagline">
+      A fragrance for every mood, memory and moment.
+    </p>
+
+    <p>
+      Something beautiful is being created behind the scenes.
+      365 Days is crafting fragrances designed to make every day
+      smell a little more fabulous.
+    </p>
+
+    <div class="coming">
+      <span>🌸</span>
+      Our collection is coming soon
+      <span>✨</span>
+    </div>
+
+  </div>
+
 </section>
 
-  <footer>
-    <p>© 2026 365 Days Perfume</p>
-    <p>Made with love & a little bit of magic ✨</p>
-  </footer>
+</main>
+
+<footer>
+  <div>© 2026 365 Days Perfume</div>
+  <div>Made with love &amp; a little bit of magic ✨</div>
+</footer>
 
 </body>
 </html>
