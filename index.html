@@ -3,180 +3,596 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>365 Days | Fragrance for Every Day</title>
+
+<title>365 DAYS | Fragrance House</title>
+
+<meta name="description" content="365 DAYS — an independent fragrance house creating scents for every mood, memory and moment.">
 
 <style>
+
 * {
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   margin: 0;
-  min-height: 100vh;
+  background: #f7f2eb;
+  color: #30231f;
   font-family: Georgia, "Times New Roman", serif;
-  background: #fff9f6;
-  color: #3d2925;
 }
 
-header {
+/* =========================
+   TOP BAR
+========================= */
+
+.top-bar {
+  background: #30231f;
+  color: #eee4d8;
   text-align: center;
-  padding: 55px 20px 35px;
-  background: #3d2925;
-  color: #fffaf7;
+  padding: 9px 15px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
 }
 
-.brand {
-  font-size: 52px;
-  letter-spacing: 6px;
-  margin: 0;
-  font-weight: normal;
+/* =========================
+   NAVIGATION
+========================= */
+
+nav {
+  background: #f7f2eb;
+  padding: 28px 35px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #ded3c7;
 }
 
-.subtitle {
-  margin-top: 12px;
-  font-size: 17px;
+.nav-brand {
+  font-size: 22px;
+  letter-spacing: 5px;
+}
+
+.nav-links {
+  display: flex;
+  gap: 35px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
   letter-spacing: 2px;
+  text-transform: uppercase;
 }
+
+.nav-links a {
+  color: #30231f;
+  text-decoration: none;
+}
+
+.nav-links a:hover {
+  opacity: 0.55;
+}
+
+/* =========================
+   HERO
+========================= */
 
 .hero {
-  min-height: 65vh;
+  min-height: 82vh;
   display: flex;
   align-items: center;
   justify-content: center;
   text-align: center;
   padding: 80px 25px;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero::before {
+  content: "365";
+  position: absolute;
+  font-size: 300px;
+  color: rgba(48, 35, 31, 0.025);
+  font-family: Georgia, serif;
+  z-index: 0;
+  pointer-events: none;
 }
 
 .hero-content {
-  max-width: 750px;
+  position: relative;
+  z-index: 1;
+  max-width: 850px;
 }
 
-.flower {
-  font-size: 45px;
-  margin-bottom: 25px;
+.small-label {
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 5px;
+  text-transform: uppercase;
+  margin-bottom: 30px;
+  color: #79655b;
 }
 
-.hero h2 {
-  font-size: 48px;
+.hero h1 {
+  margin: 0;
+  font-size: clamp(65px, 13vw, 145px);
   font-weight: normal;
-  margin: 0 0 25px;
-  letter-spacing: 2px;
+  letter-spacing: 15px;
+  line-height: 0.9;
 }
 
-.hero p {
-  font-size: 19px;
-  line-height: 1.8;
-  margin: 15px auto;
+.hero-line {
+  width: 80px;
+  height: 1px;
+  background: #9c806b;
+  margin: 38px auto;
 }
 
-.tagline {
+.hero-title {
+  font-size: 25px;
   font-style: italic;
-  font-size: 23px !important;
-  margin-bottom: 30px !important;
+  letter-spacing: 2px;
+  margin-bottom: 20px;
 }
 
-.coming {
+.hero-text {
+  max-width: 580px;
+  margin: auto;
+  font-size: 17px;
+  line-height: 1.9;
+  color: #66534b;
+}
+
+.launch {
   display: inline-block;
-  margin-top: 35px;
-  padding: 18px 30px;
-  border-top: 1px solid #cdbbb4;
-  border-bottom: 1px solid #cdbbb4;
-  font-size: 18px;
-  letter-spacing: 1px;
+  margin-top: 42px;
+  border: 1px solid #9c806b;
+  padding: 16px 32px;
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
 }
 
-.coming span {
-  margin: 0 10px;
+/* =========================
+   BRAND STATEMENT
+========================= */
+
+.statement {
+  background: #30231f;
+  color: #f7f2eb;
+  text-align: center;
+  padding: 100px 25px;
 }
+
+.statement-inner {
+  max-width: 760px;
+  margin: auto;
+}
+
+.statement-label {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #c8b4a4;
+  margin-bottom: 30px;
+}
+
+.statement h2 {
+  font-size: 42px;
+  font-weight: normal;
+  line-height: 1.25;
+  margin: 0 0 30px;
+}
+
+.statement p {
+  font-size: 17px;
+  line-height: 1.9;
+  color: #d8cbc1;
+}
+
+/* =========================
+   COLLECTION PREVIEW
+========================= */
+
+.collection {
+  padding: 100px 25px;
+  text-align: center;
+}
+
+.collection-label {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  color: #79655b;
+  margin-bottom: 20px;
+}
+
+.collection h2 {
+  font-size: 43px;
+  font-weight: normal;
+  margin: 0;
+}
+
+.collection-intro {
+  max-width: 570px;
+  margin: 25px auto 60px;
+  line-height: 1.8;
+  color: #6d5b53;
+}
+
+.collection-boxes {
+  max-width: 1000px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.collection-box {
+  min-height: 280px;
+  border: 1px solid #ded3c7;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background: #faf6f0;
+}
+
+.collection-box div {
+  max-width: 220px;
+}
+
+.collection-number {
+  font-family: Arial, sans-serif;
+  font-size: 10px;
+  letter-spacing: 3px;
+  color: #9c806b;
+  margin-bottom: 20px;
+}
+
+.collection-box h3 {
+  font-size: 25px;
+  font-weight: normal;
+  margin: 0 0 15px;
+}
+
+.collection-box p {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #77655d;
+}
+
+/* =========================
+   PHILOSOPHY
+========================= */
+
+.philosophy {
+  border-top: 1px solid #ded3c7;
+  padding: 100px 25px;
+  text-align: center;
+}
+
+.philosophy h2 {
+  font-size: 40px;
+  font-weight: normal;
+  margin: 0 0 30px;
+}
+
+.philosophy p {
+  max-width: 650px;
+  margin: auto;
+  line-height: 1.9;
+  color: #66534b;
+}
+
+/* =========================
+   FOOTER
+========================= */
 
 footer {
+  background: #30231f;
+  color: #eee4d8;
   text-align: center;
-  padding: 35px 20px;
-  background: #3d2925;
-  color: #fffaf7;
-  font-size: 14px;
-  line-height: 1.8;
+  padding: 55px 20px;
 }
 
-@media (max-width: 600px) {
-  .brand {
-    font-size: 38px;
-    letter-spacing: 4px;
+.footer-brand {
+  font-size: 28px;
+  letter-spacing: 7px;
+  margin-bottom: 15px;
+}
+
+.footer-tagline {
+  font-style: italic;
+  color: #cbb9aa;
+  margin-bottom: 30px;
+}
+
+.footer-copy {
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: #a99588;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 700px) {
+
+  nav {
+    padding: 22px 18px;
   }
 
-  .subtitle {
-    font-size: 14px;
+  .nav-links {
+    gap: 15px;
+    font-size: 9px;
+  }
+
+  .nav-brand {
+    font-size: 17px;
+    letter-spacing: 3px;
   }
 
   .hero {
-    min-height: 65vh;
-    padding: 60px 22px;
+    min-height: 75vh;
+    padding: 70px 20px;
   }
 
-  .hero h2 {
-    font-size: 36px;
+  .hero h1 {
+    letter-spacing: 8px;
   }
 
-  .hero p {
-    font-size: 17px;
+  .hero-title {
+    font-size: 21px;
   }
 
-  .tagline {
-    font-size: 21px !important;
-  }
-
-  .coming {
+  .hero-text {
     font-size: 16px;
-    padding: 15px 18px;
   }
+
+  .statement {
+    padding: 75px 25px;
+  }
+
+  .statement h2 {
+    font-size: 32px;
+  }
+
+  .collection {
+    padding: 75px 20px;
+  }
+
+  .collection h2 {
+    font-size: 34px;
+  }
+
+  .collection-boxes {
+    grid-template-columns: 1fr;
+  }
+
+  .collection-box {
+    min-height: 220px;
+  }
+
+  .philosophy {
+    padding: 75px 25px;
+  }
+
+  .philosophy h2 {
+    font-size: 32px;
+  }
+
 }
+
 </style>
 </head>
 
 <body>
 
-<header>
-  <h1 class="brand">365 DAYS</h1>
-  <div class="subtitle">
-    Fragrance for every day of the year.
-  </div>
-</header>
+<div class="top-bar">
+  An Independent Fragrance House
+</div>
 
-<main>
+<nav>
+
+  <div class="nav-brand">
+    365 DAYS
+  </div>
+
+  <div class="nav-links">
+    <a href="#story">Our Story</a>
+    <a href="#collection">Collection</a>
+  </div>
+
+</nav>
 
 <section class="hero">
 
   <div class="hero-content">
 
-    <div class="flower">🌸</div>
+    <div class="small-label">
+      Fragrance for every day
+    </div>
 
-    <h2>Launching Soon ✨</h2>
+    <h1>365</h1>
 
-    <p class="tagline">
-      A fragrance for every mood, memory and moment.
-    </p>
+    <div class="hero-line"></div>
 
-    <p>
+    <div class="hero-title">
+      A fragrance for every mood, memory &amp; moment.
+    </div>
+
+    <p class="hero-text">
       Something beautiful is being created behind the scenes.
-      365 Days is crafting fragrances designed to make every day
-      smell a little more fabulous.
+      365 DAYS is an independent fragrance house devoted to
+      creating scents that become part of your story.
     </p>
 
-    <div class="coming">
-      <span>🌸</span>
-      Our collection is coming soon
-      <span>✨</span>
+    <div class="launch">
+      Coming Soon
     </div>
 
   </div>
 
 </section>
 
-</main>
+
+<section class="statement" id="story">
+
+  <div class="statement-inner">
+
+    <div class="statement-label">
+      The House of 365 DAYS
+    </div>
+
+    <h2>
+      Every day deserves<br>
+      its own signature.
+    </h2>
+
+    <p>
+      Fragrance has a way of holding onto the moments we never
+      want to forget. A familiar scent can take you somewhere
+      instantly — to a person, a place, a season or a feeling.
+      365 DAYS is being created around that simple idea:
+      there should be a fragrance for every version of you.
+    </p>
+
+  </div>
+
+</section>
+
+
+<section class="collection" id="collection">
+
+  <div class="collection-label">
+    The Collection
+  </div>
+
+  <h2>
+    Something is coming.
+  </h2>
+
+  <p class="collection-intro">
+    Our first fragrances are currently being created.
+    Each scent will have its own personality, story and
+    place in the 365 DAYS collection.
+  </p>
+
+  <div class="collection-boxes">
+
+    <div class="collection-box">
+
+      <div>
+
+        <div class="collection-number">
+          01
+        </div>
+
+        <h3>
+          The First
+        </h3>
+
+        <p>
+          A little mystery is part of the experience.
+          Our first fragrance will be revealed soon.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="collection-box">
+
+      <div>
+
+        <div class="collection-number">
+          02
+        </div>
+
+        <h3>
+          The Next
+        </h3>
+
+        <p>
+          Because one signature scent could never
+          tell every story.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <div class="collection-box">
+
+      <div>
+
+        <div class="collection-number">
+          365
+        </div>
+
+        <h3>
+          Every Day
+        </h3>
+
+        <p>
+          Different mood. Different moment.
+          There is always another scent to discover.
+        </p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<section class="philosophy">
+
+  <div class="collection-label">
+    Our Philosophy
+  </div>
+
+  <h2>
+    Wear the moment.
+  </h2>
+
+  <p>
+    We believe perfume should feel personal.
+    Not simply something you wear, but something
+    that becomes unmistakably yours.
+  </p>
+
+</section>
+
 
 <footer>
-  <div>© 2026 365 Days Perfume</div>
-  <div>Made with love &amp; a little bit of magic ✨</div>
+
+  <div class="footer-brand">
+    365 DAYS
+  </div>
+
+  <div class="footer-tagline">
+    Fragrance for every day of the year.
+  </div>
+
+  <div class="footer-copy">
+    © 2026 365 DAYS PERFUME · ALL RIGHTS RESERVED
+  </div>
+
 </footer>
 
 </body>
